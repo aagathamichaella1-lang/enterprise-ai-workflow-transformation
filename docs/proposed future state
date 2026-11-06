@@ -1,0 +1,12 @@
+flowchart TD
+    A[Centralized Request Intake] --> B[AI Analysis]
+    B --> C[Request Classification]
+    C --> D[Priority Recommendation]
+    D --> E{Sensitive or Critical?}
+    E -->|Yes| F[Human Validation]
+    E -->|No| G[Automated Routing]
+    F --> G
+    G --> H[Department Processing]
+    H --> I[Performance Monitoring]
+    I --> J[Request Closure]
+    I --> K[Management Dashboard]
